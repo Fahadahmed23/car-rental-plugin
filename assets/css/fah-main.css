@@ -1,0 +1,421 @@
+.fah-booking-container {
+    padding: 15px;
+}
+
+.fah-right {
+	text-align: right;
+}
+
+.fah-row {
+	margin-left: -15px;
+	margin-right: -15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.fah-col-half,
+.fah-col-full,
+.fah-col-quater,
+.fah-col-quater3 {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;	
+}
+
+.fah-booking-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fah-form-group {
+    margin-bottom: 15px;
+}
+
+textarea.fah-form-control,
+select.fah-form-control,
+input[type="text"].fah-form-control,
+input[type="email"].fah-form-control,
+input[type="phone"].fah-form-control {
+	padding: 0 10px;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    background: #f4f3f8;
+    border: none;
+}
+
+@media screen and (min-width: 767px) {
+	.fah-col-half {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+
+	.fah-col-quater {
+		width: 30%;
+		flex: 0 0 30%;
+	}
+
+	.fah-col-quater3 {
+		width: 70%;
+		flex: 0 0 70%;
+	}
+}
+
+.site-content {
+    background: #f4f3f8;
+}
+
+.fah-review-container,
+.fah-location-detail {
+    background-color: #ffffff;
+    position: relative;
+    border-bottom: 4px solid #e8e6ec;
+    margin-bottom: 20px;
+}
+
+.fah-vehicle-title {
+    margin-bottom: 11px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fah-vehicle-meta ul li {
+    display: inline-block;
+    padding-right: 10px;
+    border-right: 1px solid #cccccc;
+    margin-left: 12px;
+    font-size: 13px
+}
+
+.fah-vehicle-meta ul li:first-child {
+    margin-left: 0;
+}
+
+.fah-vehicle-meta ul li:last-child {
+    border-right: none;
+}
+
+.fah-vehicle-meta {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.fah-steps-container {
+    text-align: center;
+}
+
+.fah-steps li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.fah-step-description {
+    color: #807e8a;
+}
+
+.fah-checkbox-group {
+    display: flex;
+}
+
+.fah-checkbox-group > label {
+    width: 100px;
+    display: block;
+    text-align: center;
+    background: #1f1e26;
+    color: #ffffff;
+    padding: 10px;
+    border-right: 1px solid #ffffff; 
+}
+
+.fah-checkbox-group > label:first-child {
+    border-radius: 5px 0 0px 5px;
+}
+
+.fah-checkbox-group > label:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.fah-checkbox-group [type=radio],
+.fah-checkbox-group [type=checkbox] {
+    display: none;
+}
+
+
+.fah-btn {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    font-family: inherit;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.fah-btn-primary {
+    color: #ffffff;
+    background: #c30000;
+}
+
+.fah-btn-secondary {
+    color: #c30000;
+    background: transparent;
+    border: 2px solid #c30000
+}
+
+ul.fah-vehicle-list {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.fah-vehicle-item {
+    background: #ffffff;
+    margin-bottom: 20px;
+}
+
+.fah-vehicle-item-inner {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #e8e6ec;
+}
+
+.fah-vehicle-item-inner .fah-vehicle-image {
+    width: 25%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fah-vehicle-item-inner .fah-vehicle-detail {
+    width: 50%;
+    padding: 15px;
+    position: relative;
+}
+
+.fah-vehicle-item-inner .fah-vehicle-select-box {
+    width: 25%;
+    text-align: center;
+    padding: 15px 0;
+    border-left: 1px solid #e8e6ec;
+}
+
+.fah-vehicle-item-extra {
+	display: none;
+}
+
+.fah-vehicle-item.active .fah-vehicle-item-extra {
+	display: block;
+}
+
+.fah-btn-select-vehicle {
+	color: #c30000;
+    background: transparent;
+    border: 2px solid #c30000;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.fah-vehicle-price span,
+.fah-vehicle-price del {
+    display: block;
+}
+
+.fah-vehicle-price span {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.fah-vehicle-price del {
+    text-decoration: line-through;
+    color: #9a97a7;
+}
+
+.fah-btn-select-vehicle [type="radio"] {
+	display: none;
+}
+
+.fah-btn-select-vehicle.active {
+	color: #ffffff;
+    background: #c30000;
+}
+
+.fah-btn-select-vehicle .fah-unselected-text {
+	display: inline;
+}
+
+.fah-btn-select-vehicle .fah-selected-text {
+	display: none;
+}
+
+.fah-btn-select-vehicle.active .fah-unselected-text {
+	display: none;
+}
+
+.fah-btn-select-vehicle.active .fah-selected-text {
+	display: inline;
+}
+
+.fah-passenger-detail > .fah-row .fah-col-quater3 {
+	background: #ffffff;
+	padding: 15px;
+}
+
+.fah-summary-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dedbea;
+}
+
+.fah-summary-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.fah-summary-item h3 a {
+    font-weight: normal;
+    font-size: 13px;
+    float: right;
+    margin-top: 5px;
+}
+
+.fah-summary-item-detail {
+    font-size: 15px;
+}
+
+.fah-payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fah-payment-methods li {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.fah-payment-methods li img {
+    width: 50px;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+
+.fah-payment-methods li label {
+    border: 3px solid #d4d2dc;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    padding-left: 70px;
+    border-radius: 4px;
+    margin-bottom: 0;
+}
+
+.fah-payment-methods li label [type=radio] {
+    display: none;
+}
+
+/* MAP  */
+#fah-map {
+    height: 190px;
+}
+
+.fah-step-content {
+    display: none;
+}
+
+.fah-active-step {
+    display: block;
+}
+
+.fah-booking-type-tabs {
+    overflow: hidden;
+    border-radius: 5px;
+    height: 35px;
+    border: 1px solid #403e3e;
+    float: left;
+}
+
+.fah-booking-type-tabs > label {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    border-left: 1px solid #403e3e;
+    cursor: pointer;
+}
+
+.fah-booking-type-tabs > label:first-child {
+    border-left: none;
+}
+
+.fah-booking-type-tabs > label.fah-active {
+    background: #c30000;
+    color: #ffffff;
+}
+
+.fah-booking-type-tabs > label [type=radio]{
+    display: none;
+}
+
+.fah-booking-type-dependent {
+    display: none;
+}
+
+.vps-estimate {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background: #c40b00;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fah-map-pin {
+    width: 50px;
+    position: absolute;
+    z-index: 999;
+    height: 50px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+.fah-map-pin img {
+    position: absolute;
+    left: 0;
+    top: -60px;
+}
+
+.enable-pin .fah-map-pin {
+    display: block;
+}
+
+.fah-set-pickup,
+.fah-set-dropoff {
+    display: none;
+}
+
+.enable-pin .fah-set-pickup,
+.enable-pin .fah-set-dropoff  {
+    display: inline-block;
+}
+
+.fah-dependent-register {
+    display: none;
+}
